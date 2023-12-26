@@ -1,0 +1,28 @@
+.canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: black;
+}
+
+.win, .lose {
+    background-color: transparent;
+    width: 20%;
+    height: 20%;
+    position: absolute;
+    color: white;
+    font-size: 120px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.win {
+    left: 5%;
+}
+
+.lose {
+    right: -8%;
+}
+
