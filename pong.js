@@ -133,11 +133,11 @@ animate();
 function control(e) {
   switch (e.key) {
     case "ArrowUp":
-      player.y -= 25;
-      break;
-    case "ArrowDown":
-      player.y += 25;
-      break;
+            player.velocity.y = 0
+            break;
+      case "ArrowDown":
+          player.velocity.y = 0
+          break;
   }
 }
 window.addEventListener("keydown", control);
