@@ -9,6 +9,27 @@ if (canvas) {
 const win = document.querySelector('.win');
 const lose = document.querySelector('.lose');
 
+const upbtn = document.querySelector('.up');
+const downbtn = document.querySelector('.down');
+
+function moveup() {
+    player.velocity.y = -5;
+}
+
+function movedown() {
+    player.velocity.y = 5;
+}
+
+if (upbtn) {
+    upbtn.innerHTML = "▲"
+    upbtn.addEventListener("click", moveup)
+}
+
+if(downbtn) {
+    downbtn.innerHTML = "▼"
+    downbtn.addEventListener("click", movedown)
+}
+
 class Rectangle {
     x: number;
     y: number;
@@ -180,17 +201,6 @@ function control(e: KeyboardEvent): void {
             break;
         case "ArrowDown":
             player.velocity.y = 5
-            break;
-    }
-}
-
-function down(e: KeyboardEvent): void {
-    switch(e.key) {
-        case "ArrowUp":
-            player.velocity.y = 0
-            break;
-        case "ArrowDown":
-            player.velocity.y = 0
             break;
     }
 }
