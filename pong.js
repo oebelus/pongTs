@@ -6,6 +6,22 @@ if (canvas) {
 }
 const win = document.querySelector(".win");
 const lose = document.querySelector(".lose");
+const upbtn = document.querySelector('.up');
+const downbtn = document.querySelector('.down');
+function moveup() {
+    player.velocity.y = -5;
+}
+function movedown() {
+    player.velocity.y = 5;
+}
+if (upbtn) {
+    upbtn.innerHTML = "▲"
+    upbtn.addEventListener("click", moveup)
+}
+if(downbtn) {
+    downbtn.innerHTML = "▼"
+    downbtn.addEventListener("click", movedown)
+}
 class Rectangle {
   constructor(x, y, w, h, color) {
     this.x = x;
