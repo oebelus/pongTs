@@ -30,3 +30,22 @@
     right: -8%;
 }
 
+.up, .down {
+    background-color: transparent;
+    border-color: transparent;
+    position: absolute;
+    height: 80px;
+    width: 80px;
+    font-size: 70px;
+    color: white;
+    cursor: pointer;
+    right: 0;
+}
+
+.up {
+    bottom: 12%;
+}
+
+.down {
+    bottom: 2%;
+}
