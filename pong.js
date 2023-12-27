@@ -131,12 +131,12 @@ function animate() {
 }
 animate();
 function control(e) {
-  switch (e.key) {
-    case "ArrowUp":
-            player.velocity.y = 0
-            break;
+  switch(e.key) {
+      case "ArrowUp":
+          player.velocity.y = -5
+          break;
       case "ArrowDown":
-          player.velocity.y = 0
+          player.velocity.y = 5
           break;
   }
 }
