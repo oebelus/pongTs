@@ -176,10 +176,21 @@ animate()
 function control(e: KeyboardEvent): void {
     switch(e.key) {
         case "ArrowUp":
-            player.y -= 25
+            player.velocity.y = -5
             break;
         case "ArrowDown":
-            player.y += 25
+            player.velocity.y = 5
+            break;
+    }
+}
+
+function down(e: KeyboardEvent): void {
+    switch(e.key) {
+        case "ArrowUp":
+            player.velocity.y = 0
+            break;
+        case "ArrowDown":
+            player.velocity.y = 0
             break;
     }
 }
